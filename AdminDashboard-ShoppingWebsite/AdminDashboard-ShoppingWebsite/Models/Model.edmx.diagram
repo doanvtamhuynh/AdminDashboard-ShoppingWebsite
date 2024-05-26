@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9fa74548e23e4d1dbbc9986f75c30867" Name="Diagram1">
+        <EntityTypeShape EntityType="ShoppingWebsiteModel.BinhLuan" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingWebsiteModel.ChiTietDonHang" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingWebsiteModel.DonHang" Width="1.5" PointX="5.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingWebsiteModel.Role" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingWebsiteModel.SanPham" Width="1.5" PointX="5.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingWebsiteModel.sysdiagram" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingWebsiteModel.TinhTrangDonHang" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingWebsiteModel.User" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <AssociationConnector Association="ShoppingWebsiteModel.FK_BinhLuan_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingWebsiteModel.FK_BinhLuan_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingWebsiteModel.FK_ChiTietDonHang_DonHang" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingWebsiteModel.FK_ChiTietDonHang_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingWebsiteModel.FK_DonHang_TinhTrangDonHang" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingWebsiteModel.FK_DonHang_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingWebsiteModel.FK_Users_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
