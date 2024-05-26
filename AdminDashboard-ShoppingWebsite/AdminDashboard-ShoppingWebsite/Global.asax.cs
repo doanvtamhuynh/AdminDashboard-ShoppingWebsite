@@ -14,5 +14,16 @@ namespace AdminDashboard_ShoppingWebsite
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
+        protected void Application_Error(object sender, EventArgs e)
+        {
+            Exception exception = Server.GetLastError();
+            Response.Clear();
+            if (exception is HttpException httpException && httpException.GetHttpCode() == 404)
+            {
+                Response.Redirect("~/Home/Index");
+            }
+            Server.ClearError();
+        }
+
     }
 }

@@ -70,3 +70,7 @@ D:\MyProject\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\Admin
 D:\MyProject\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\obj\Debug\AdminDas.A0CEA83C.Up2Date
 D:\MyProject\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\obj\Debug\AdminDashboard-ShoppingWebsite.dll
 D:\MyProject\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\obj\Debug\AdminDashboard-ShoppingWebsite.pdb
+D:\MyProject\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\bin\EntityFramework.dll
+D:\MyProject\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\bin\EntityFramework.SqlServer.dll
+D:\MyProject\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\bin\EntityFramework.xml
+D:\MyProject\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\AdminDashboard-ShoppingWebsite\bin\EntityFramework.SqlServer.xml
