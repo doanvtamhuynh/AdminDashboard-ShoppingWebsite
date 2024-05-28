@@ -71,6 +71,8 @@
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="ShoppingWebsiteModel.User">
         <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
           <ScalarProperty Name="userID" ColumnName="userID" />
           <ScalarProperty Name="hoten" ColumnName="hoten" />
           <ScalarProperty Name="sdt" ColumnName="sdt" />

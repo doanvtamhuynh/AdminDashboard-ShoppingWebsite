@@ -83,6 +83,8 @@
     <NavigationProperty Name="BinhLuans" Relationship="Self.FK_BinhLuan_Users" FromRole="Users" ToRole="BinhLuan" />
     <NavigationProperty Name="DonHangs" Relationship="Self.FK_DonHang_Users" FromRole="Users" ToRole="DonHang" />
     <NavigationProperty Name="Role" Relationship="Self.FK_Users_Role" FromRole="Users" ToRole="Role" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
   </EntityType>
   <Association Name="FK_BinhLuan_SanPham">
     <End Role="SanPham" Type="Self.SanPham" Multiplicity="1">

@@ -69,6 +69,8 @@
     <Property Name="sdt" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="email" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="roleID" Type="int" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="20" Nullable="false" />
   </EntityType>
   <Association Name="FK_BinhLuan_SanPham">
     <End Role="SanPham" Type="Self.SanPham" Multiplicity="1">

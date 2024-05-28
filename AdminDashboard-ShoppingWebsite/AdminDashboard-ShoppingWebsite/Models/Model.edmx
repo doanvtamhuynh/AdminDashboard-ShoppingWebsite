@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ShoppingWebsiteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="ShoppingWebsiteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="BinhLuan">
           <Key>
             <PropertyRef Name="commentID" />
@@ -74,6 +74,8 @@
           <Property Name="sdt" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="email" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="roleID" Type="int" Nullable="false" />
+          <Property Name="username" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="20" Nullable="false" />
         </EntityType>
         <Association Name="FK_BinhLuan_SanPham">
           <End Role="SanPham" Type="Self.SanPham" Multiplicity="1">
@@ -205,8 +207,7 @@
             <End Role="Users" EntitySet="Users" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ShoppingWebsiteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -293,6 +294,8 @@
           <NavigationProperty Name="BinhLuans" Relationship="Self.FK_BinhLuan_Users" FromRole="Users" ToRole="BinhLuan" />
           <NavigationProperty Name="DonHangs" Relationship="Self.FK_DonHang_Users" FromRole="Users" ToRole="DonHang" />
           <NavigationProperty Name="Role" Relationship="Self.FK_Users_Role" FromRole="Users" ToRole="Role" />
+          <Property Name="username" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="password" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_BinhLuan_SanPham">
           <End Role="SanPham" Type="Self.SanPham" Multiplicity="1">
@@ -500,6 +503,8 @@
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="ShoppingWebsiteModel.User">
               <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="username" ColumnName="username" />
                 <ScalarProperty Name="userID" ColumnName="userID" />
                 <ScalarProperty Name="hoten" ColumnName="hoten" />
                 <ScalarProperty Name="sdt" ColumnName="sdt" />
