@@ -1,0 +1,61 @@
+﻿@model IEnumerable<AdminDashboard_ShoppingWebsite.Models.User>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_AdminLayout.cshtml";
+}
+
+
+<p>
+    @Html.ActionLink("Thêm tài khoản", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Họ Tên
+        </th>
+        <th>
+           Số điện thoại
+        </th>
+        <th>
+           Email
+        </th>
+        <th>
+            Tên Tài Khoản
+        </th>
+        <th>
+            Mật khẩu
+        </th>
+        <th>
+            Role
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.hoten)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sdt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.username)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Role.tenrole)
+        </td>
+        <td>
+            @Html.ActionLink("Xóa Tài Khoản", "Delete", new { id=item.userID })
+        </td>
+    </tr>
+}
+
+</table>

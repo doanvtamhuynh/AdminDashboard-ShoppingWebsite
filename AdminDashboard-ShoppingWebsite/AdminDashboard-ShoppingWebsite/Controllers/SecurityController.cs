@@ -47,5 +47,11 @@ namespace AdminDashboard_ShoppingWebsite.Controllers
             TempData["error_forgotpassword"] = true;
             return RedirectToAction("ForgotPassword");
         }
+
+        public ActionResult Logout()
+        {
+            Session["user"] = null;
+            return RedirectToAction("Login");
+        }
     }
 }
