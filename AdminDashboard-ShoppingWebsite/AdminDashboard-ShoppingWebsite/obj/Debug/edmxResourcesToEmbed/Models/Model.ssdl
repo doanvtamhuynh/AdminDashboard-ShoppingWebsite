@@ -26,6 +26,7 @@
     <Property Name="donhangID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="userID" Type="int" Nullable="false" />
     <Property Name="tinhtrangID" Type="int" Nullable="false" />
+    <Property Name="ngaygiaohang" Type="datetime" />
   </EntityType>
   <EntityType Name="Role">
     <Key>

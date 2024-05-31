@@ -31,6 +31,7 @@
           <Property Name="donhangID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="userID" Type="int" Nullable="false" />
           <Property Name="tinhtrangID" Type="int" Nullable="false" />
+          <Property Name="ngaygiaohang" Type="datetime" />
         </EntityType>
         <EntityType Name="Role">
           <Key>
@@ -245,6 +246,7 @@
           <NavigationProperty Name="ChiTietDonHangs" Relationship="Self.FK_ChiTietDonHang_DonHang" FromRole="DonHang" ToRole="ChiTietDonHang" />
           <NavigationProperty Name="TinhTrangDonHang" Relationship="Self.FK_DonHang_TinhTrangDonHang" FromRole="DonHang" ToRole="TinhTrangDonHang" />
           <NavigationProperty Name="User" Relationship="Self.FK_DonHang_Users" FromRole="DonHang" ToRole="Users" />
+          <Property Name="ngaygiaohang" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="Role">
           <Key>
@@ -459,6 +461,7 @@
           <EntitySetMapping Name="DonHangs">
             <EntityTypeMapping TypeName="ShoppingWebsiteModel.DonHang">
               <MappingFragment StoreEntitySet="DonHang">
+                <ScalarProperty Name="ngaygiaohang" ColumnName="ngaygiaohang" />
                 <ScalarProperty Name="donhangID" ColumnName="donhangID" />
                 <ScalarProperty Name="userID" ColumnName="userID" />
                 <ScalarProperty Name="tinhtrangID" ColumnName="tinhtrangID" />

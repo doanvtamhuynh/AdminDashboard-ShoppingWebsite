@@ -33,6 +33,7 @@
     <NavigationProperty Name="ChiTietDonHangs" Relationship="Self.FK_ChiTietDonHang_DonHang" FromRole="DonHang" ToRole="ChiTietDonHang" />
     <NavigationProperty Name="TinhTrangDonHang" Relationship="Self.FK_DonHang_TinhTrangDonHang" FromRole="DonHang" ToRole="TinhTrangDonHang" />
     <NavigationProperty Name="User" Relationship="Self.FK_DonHang_Users" FromRole="DonHang" ToRole="Users" />
+    <Property Name="ngaygiaohang" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="Role">
     <Key>

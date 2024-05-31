@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\MyProject\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3546F192-418D-40DB-A5BA-14D3451146DB}|AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite.csproj|d:\\myproject\\admindashboard-shoppingwebsite\\admindashboard-shoppingwebsite\\admindashboard-shoppingwebsite\\views\\qldonhang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3546F192-418D-40DB-A5BA-14D3451146DB}|AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite.csproj|solutionrelative:admindashboard-shoppingwebsite\\views\\qldonhang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3546F192-418D-40DB-A5BA-14D3451146DB}|AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite.csproj|d:\\myproject\\admindashboard-shoppingwebsite\\admindashboard-shoppingwebsite\\admindashboard-shoppingwebsite\\views\\thongkedoanhthu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3546F192-418D-40DB-A5BA-14D3451146DB}|AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite.csproj|solutionrelative:admindashboard-shoppingwebsite\\views\\thongkedoanhthu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3546F192-418D-40DB-A5BA-14D3451146DB}|AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite.csproj|d:\\myproject\\admindashboard-shoppingwebsite\\admindashboard-shoppingwebsite\\admindashboard-shoppingwebsite\\controllers\\qldonhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3546F192-418D-40DB-A5BA-14D3451146DB}|AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite.csproj|solutionrelative:admindashboard-shoppingwebsite\\controllers\\qldonhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3546F192-418D-40DB-A5BA-14D3451146DB}|AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite.csproj|d:\\myproject\\admindashboard-shoppingwebsite\\admindashboard-shoppingwebsite\\admindashboard-shoppingwebsite\\controllers\\thongkedoanhthucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3546F192-418D-40DB-A5BA-14D3451146DB}|AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite.csproj|solutionrelative:admindashboard-shoppingwebsite\\controllers\\thongkedoanhthucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3546F192-418D-40DB-A5BA-14D3451146DB}|AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite.csproj|d:\\myproject\\admindashboard-shoppingwebsite\\admindashboard-shoppingwebsite\\admindashboard-shoppingwebsite\\views\\thongkedoanhthu\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3546F192-418D-40DB-A5BA-14D3451146DB}|AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite.csproj|solutionrelative:admindashboard-shoppingwebsite\\views\\thongkedoanhthu\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3546F192-418D-40DB-A5BA-14D3451146DB}|AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite.csproj|d:\\myproject\\admindashboard-shoppingwebsite\\admindashboard-shoppingwebsite\\admindashboard-shoppingwebsite\\views\\thongkedoanhthu\\timkiemtheothang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3546F192-418D-40DB-A5BA-14D3451146DB}|AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite.csproj|solutionrelative:admindashboard-shoppingwebsite\\views\\thongkedoanhthu\\timkiemtheothang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TimKiemTheoThang.cshtml",
+              "DocumentMoniker": "D:\\MyProject\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\Views\\ThongKeDoanhThu\\TimKiemTheoThang.cshtml",
+              "RelativeDocumentMoniker": "AdminDashboard-ShoppingWebsite\\Views\\ThongKeDoanhThu\\TimKiemTheoThang.cshtml",
+              "ToolTip": "D:\\MyProject\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\Views\\ThongKeDoanhThu\\TimKiemTheoThang.cshtml",
+              "RelativeToolTip": "AdminDashboard-ShoppingWebsite\\Views\\ThongKeDoanhThu\\TimKiemTheoThang.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAFUAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T10:52:32.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TimKiem.cshtml",
+              "DocumentMoniker": "D:\\MyProject\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\Views\\ThongKeDoanhThu\\TimKiem.cshtml",
+              "RelativeDocumentMoniker": "AdminDashboard-ShoppingWebsite\\Views\\ThongKeDoanhThu\\TimKiem.cshtml",
+              "ToolTip": "D:\\MyProject\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\Views\\ThongKeDoanhThu\\TimKiem.cshtml",
+              "RelativeToolTip": "AdminDashboard-ShoppingWebsite\\Views\\ThongKeDoanhThu\\TimKiem.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAFoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T10:52:29.072Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\MyProject\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\Views\\QLDonHang\\Index.cshtml",
-              "RelativeDocumentMoniker": "AdminDashboard-ShoppingWebsite\\Views\\QLDonHang\\Index.cshtml",
-              "ToolTip": "D:\\MyProject\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\Views\\QLDonHang\\Index.cshtml",
-              "RelativeToolTip": "AdminDashboard-ShoppingWebsite\\Views\\QLDonHang\\Index.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAEMAAAA9AAAA",
+              "DocumentMoniker": "D:\\MyProject\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\Views\\ThongKeDoanhThu\\Index.cshtml",
+              "RelativeDocumentMoniker": "AdminDashboard-ShoppingWebsite\\Views\\ThongKeDoanhThu\\Index.cshtml",
+              "ToolTip": "D:\\MyProject\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\Views\\ThongKeDoanhThu\\Index.cshtml",
+              "RelativeToolTip": "AdminDashboard-ShoppingWebsite\\Views\\ThongKeDoanhThu\\Index.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAFgAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-31T08:40:18.072Z",
+              "WhenOpened": "2024-05-31T10:52:22.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "QLDonHangController.cs",
-              "DocumentMoniker": "D:\\MyProject\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\Controllers\\QLDonHangController.cs",
-              "RelativeDocumentMoniker": "AdminDashboard-ShoppingWebsite\\Controllers\\QLDonHangController.cs",
-              "ToolTip": "D:\\MyProject\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\Controllers\\QLDonHangController.cs",
-              "RelativeToolTip": "AdminDashboard-ShoppingWebsite\\Controllers\\QLDonHangController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCgAAAAAAAAA",
+              "Title": "ThongKeDoanhThuController.cs",
+              "DocumentMoniker": "D:\\MyProject\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\Controllers\\ThongKeDoanhThuController.cs",
+              "RelativeDocumentMoniker": "AdminDashboard-ShoppingWebsite\\Controllers\\ThongKeDoanhThuController.cs",
+              "ToolTip": "D:\\MyProject\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\AdminDashboard-ShoppingWebsite\\Controllers\\ThongKeDoanhThuController.cs",
+              "RelativeToolTip": "AdminDashboard-ShoppingWebsite\\Controllers\\ThongKeDoanhThuController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T08:01:05.363Z",
+              "WhenOpened": "2024-05-31T10:52:17.658Z",
               "EditorCaption": ""
             }
           ]

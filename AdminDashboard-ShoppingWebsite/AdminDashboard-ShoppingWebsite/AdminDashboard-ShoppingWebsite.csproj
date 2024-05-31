@@ -2232,6 +2232,7 @@
     <Compile Include="Controllers\QLSanPhamController.cs" />
     <Compile Include="Controllers\QLTaiKhoanController.cs" />
     <Compile Include="Controllers\SecurityController.cs" />
+    <Compile Include="Controllers\ThongKeDoanhThuController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2376,6 +2377,9 @@
     <Content Include="Views\QLSanPham\Edit.cshtml" />
     <Content Include="Views\QLDonHang\Index.cshtml" />
     <Content Include="Views\QLDonHang\Details.cshtml" />
+    <Content Include="Views\ThongKeDoanhThu\Index.cshtml" />
+    <Content Include="Views\ThongKeDoanhThu\TimKiem.cshtml" />
+    <Content Include="Views\ThongKeDoanhThu\TimKiemTheoThang.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

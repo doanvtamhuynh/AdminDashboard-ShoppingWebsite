@@ -25,6 +25,7 @@
     <EntitySetMapping Name="DonHangs">
       <EntityTypeMapping TypeName="ShoppingWebsiteModel.DonHang">
         <MappingFragment StoreEntitySet="DonHang">
+          <ScalarProperty Name="ngaygiaohang" ColumnName="ngaygiaohang" />
           <ScalarProperty Name="donhangID" ColumnName="donhangID" />
           <ScalarProperty Name="userID" ColumnName="userID" />
           <ScalarProperty Name="tinhtrangID" ColumnName="tinhtrangID" />

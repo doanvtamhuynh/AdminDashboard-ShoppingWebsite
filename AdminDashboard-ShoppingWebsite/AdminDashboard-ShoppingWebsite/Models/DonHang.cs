@@ -23,6 +23,7 @@ namespace AdminDashboard_ShoppingWebsite.Models
         public int donhangID { get; set; }
         public int userID { get; set; }
         public int tinhtrangID { get; set; }
+        public Nullable<System.DateTime> ngaygiaohang { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }

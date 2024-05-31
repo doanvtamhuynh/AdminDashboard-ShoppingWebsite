@@ -1,0 +1,101 @@
+﻿@model IEnumerable<AdminDashboard_ShoppingWebsite.Models.DonHang>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_AdminLayout.cshtml";
+    AdminDashboard_ShoppingWebsite.Models.ShoppingWebsiteEntities db = new AdminDashboard_ShoppingWebsite.Models.ShoppingWebsiteEntities();
+    double doanhThu = 0;
+}
+
+<select style="margin-top:20px;margin-bottom:20px" id="mySelect">
+    <option value="ngay">
+        Ngày
+    </option>
+    <option value="thang" selected>
+        Tháng
+    </option>
+</select>
+<div id="myForm">
+    <form  action="~/ThongKeDoanhThu/TimKiemTheoThang" method="get">
+        <input type="month" name="month" id="dateInput" />
+        <button type="submit">Tìm kiếm</button>
+    </form>
+</div>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Người Đặt Hàng
+        </th>
+        <th>
+            Tổng Tiền
+        </th>
+        <th>
+            Ngày Giao Hàng
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.User.hoten
+            </td>
+            <td>
+                @{
+                    var chitietDH = db.ChiTietDonHangs.Where(m => m.donhangID == item.donhangID).ToList();
+                    double tongTien = 0;
+                    foreach (var i in chitietDH)
+                    {
+                        tongTien += (i.giasanphamdathang * i.soluong);
+                    }
+                    doanhThu += tongTien;
+                }
+                @tongTien đ
+            </td>
+            <td>
+                @item.ngaygiaohang
+            </td>
+        </tr>
+    }
+
+</table>
+<hr />
+<label>
+    Doanh Thu: @doanhThu đ
+</label>
+
+<script defer>
+    var today = new Date;
+    var yyyy = today.getFullYear();
+    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    var dd = String(today.getDate()).padStart(2, '0');
+    var currentDate = yyyy + '-' + mm + '-' + dd;
+    document.getElementById("dateInput").value = currentDate;
+    var currentMonth = today.toISOString().slice(0, 7);
+    document.getElementById("dateInput").value = currentMonth;
+</script>
+<script defer>
+    var mySelect = document.getElementById("mySelect");
+    mySelect.addEventListener("change", function () {
+        var selectValue = mySelect.value;
+        if (selectValue == "ngay") {
+            var myForm = document.getElementById("myForm");
+            myForm.innerHTML = `<form action="TimKiem" method="get">
+                                    <input type="date" name="datetime" id="dateInput"/>
+                                    <button type="submit">Tìm kiếm</button>
+                                </form>`;
+            document.getElementById("dateInput").value = currentDate;
+        } else {
+            var myForm = document.getElementById("myForm");
+            myForm.innerHTML = `<form action="TimKiemTheoThang" method="get">
+                        <input type="month" name="month" id="dateInput"/>
+                        <button type="submit">Tìm kiếm</button>
+                    </form>`;
+            var currentMonth = today.toISOString().slice(0, 7);
+            document.getElementById("dateInput").value = currentMonth;
+        }
+    });
+</script>
