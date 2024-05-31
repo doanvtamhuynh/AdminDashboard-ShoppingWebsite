@@ -1,0 +1,57 @@
+﻿@model IEnumerable<AdminDashboard_ShoppingWebsite.Models.ChiTietDonHang>
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/_AdminLayout.cshtml";
+    double tongTien = 0;
+}
+
+<h2>Details</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Hình Ảnh
+        </th>
+        <th>
+            Tên Sản Phẩm
+        </th>
+        <th>
+            Giá Sản Phẩm
+        </th>
+        <th>
+           Số Lượng
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    tongTien += (item.giasanphamdathang * item.soluong);
+    <tr>
+        <td>
+            <img src="~/Content/img/@item.SanPham.urlhinharnh"
+                 style="width:50px; height:50px; border: 0.5px solid black"/>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SanPham.tensanpham)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.giasanphamdathang) đ
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.soluong)
+        </td>
+        
+    </tr>
+}
+
+</table>
+<hr />
+<span>
+    Tổng Tiền: @tongTien đ
+</span>
+<hr />
+<div>
+
+        @Html.ActionLink("Back To List", "Index")
+</div>

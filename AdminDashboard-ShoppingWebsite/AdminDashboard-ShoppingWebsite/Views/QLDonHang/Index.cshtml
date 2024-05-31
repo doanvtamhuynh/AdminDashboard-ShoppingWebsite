@@ -1,0 +1,80 @@
+﻿@model IEnumerable<AdminDashboard_ShoppingWebsite.Models.DonHang>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_AdminLayout.cshtml";
+    AdminDashboard_ShoppingWebsite.Models.ShoppingWebsiteEntities db = new AdminDashboard_ShoppingWebsite.Models.ShoppingWebsiteEntities();
+}
+
+
+<table class="table">
+    <tr>
+        <th>
+            Người Đặt Hàng
+        </th>
+        <th>
+            Tổng Tiền
+        </th>
+        <th>
+            Tình Trạng Đơn Hàng
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @item.User.hoten
+        </td>
+        <td>
+            @{
+                var chitietDH = db.ChiTietDonHangs.Where(m => m.donhangID == item.donhangID).ToList();
+                double tongTien = 0;
+                foreach (var i in chitietDH)
+                {
+                    tongTien += (i.giasanphamdathang * i.soluong);
+                }
+            }
+            @tongTien đ
+        </td>
+        @if (item.tinhtrangID == 1)
+        {
+            <td>
+                Đơn hàng chưa được xác nhận
+            </td>
+        }
+        else if (item.tinhtrangID == 2)
+        {
+            <td>
+                Đơn hàng đã được xác nhận
+            </td>
+        }
+        else
+        {
+            <td>
+                Đơn hàng đã thanh toán
+            </td>
+        }
+        @{
+            if (item.tinhtrangID == 1)
+            {
+                <td>
+                    @Html.ActionLink("Xác Nhận", "XacNhan", new { id = item.donhangID })
+                </td>
+            }
+            else if (item.tinhtrangID == 2)
+            {
+                <td>
+                    @Html.ActionLink("Hoàn Thành", "HoanThanh", new { id = item.donhangID })
+                </td>
+            }
+        }
+        <td>
+
+            @Html.ActionLink("Details", "Details", new { id = item.donhangID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.donhangID })
+        </td>
+    </tr>
+}
+
+</table>
