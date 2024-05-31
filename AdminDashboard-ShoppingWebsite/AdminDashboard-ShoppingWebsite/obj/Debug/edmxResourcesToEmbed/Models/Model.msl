@@ -42,6 +42,7 @@
     <EntitySetMapping Name="SanPhams">
       <EntityTypeMapping TypeName="ShoppingWebsiteModel.SanPham">
         <MappingFragment StoreEntitySet="SanPham">
+          <ScalarProperty Name="urlhinharnh" ColumnName="urlhinharnh" />
           <ScalarProperty Name="sanphamID" ColumnName="sanphamID" />
           <ScalarProperty Name="tensanpham" ColumnName="tensanpham" />
           <ScalarProperty Name="giasanpham" ColumnName="giasanpham" />

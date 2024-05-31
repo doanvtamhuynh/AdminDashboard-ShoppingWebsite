@@ -17,7 +17,7 @@
     <Property Name="sanphamID" Type="int" Nullable="false" />
     <Property Name="giasanphamdathang" Type="float" Nullable="false" />
     <Property Name="donhangID" Type="int" Nullable="false" />
-    <Property Name="soluong" Type="int" />
+    <Property Name="soluong" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="DonHang">
     <Key>
@@ -42,6 +42,7 @@
     <Property Name="tensanpham" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="giasanpham" Type="float" Nullable="false" />
     <Property Name="tonkho" Type="int" Nullable="false" />
+    <Property Name="urlhinharnh" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>

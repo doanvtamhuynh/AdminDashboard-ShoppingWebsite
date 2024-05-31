@@ -1,0 +1,51 @@
+﻿@model IEnumerable<AdminDashboard_ShoppingWebsite.Models.SanPham>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_AdminLayout.cshtml";
+}
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Hình Ảnh
+        </th>
+        <th>
+            Tên Sản Phẩm
+        </th>
+        <th>
+            Giá Sản Phẩm
+        </th>
+        <th>
+            Số Lượng
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td >
+            <img src="~/Content/img/@item.urlhinharnh" 
+                 style="width:50px; height:50px; border: 0.5px;"/>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tensanpham)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.giasanpham)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tonkho)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.sanphamID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.sanphamID })
+        </td>
+    </tr>
+}
+
+</table>

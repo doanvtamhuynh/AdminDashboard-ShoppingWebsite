@@ -22,7 +22,7 @@
           <Property Name="sanphamID" Type="int" Nullable="false" />
           <Property Name="giasanphamdathang" Type="float" Nullable="false" />
           <Property Name="donhangID" Type="int" Nullable="false" />
-          <Property Name="soluong" Type="int" />
+          <Property Name="soluong" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="DonHang">
           <Key>
@@ -47,6 +47,7 @@
           <Property Name="tensanpham" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="giasanpham" Type="float" Nullable="false" />
           <Property Name="tonkho" Type="int" Nullable="false" />
+          <Property Name="urlhinharnh" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -230,7 +231,7 @@
           <Property Name="sanphamID" Type="Int32" Nullable="false" />
           <Property Name="giasanphamdathang" Type="Double" Nullable="false" />
           <Property Name="donhangID" Type="Int32" Nullable="false" />
-          <Property Name="soluong" Type="Int32" />
+          <Property Name="soluong" Type="Int32" Nullable="false" />
           <NavigationProperty Name="DonHang" Relationship="Self.FK_ChiTietDonHang_DonHang" FromRole="ChiTietDonHang" ToRole="DonHang" />
           <NavigationProperty Name="SanPham" Relationship="Self.FK_ChiTietDonHang_SanPham" FromRole="ChiTietDonHang" ToRole="SanPham" />
         </EntityType>
@@ -263,6 +264,7 @@
           <Property Name="tonkho" Type="Int32" Nullable="false" />
           <NavigationProperty Name="BinhLuans" Relationship="Self.FK_BinhLuan_SanPham" FromRole="SanPham" ToRole="BinhLuan" />
           <NavigationProperty Name="ChiTietDonHangs" Relationship="Self.FK_ChiTietDonHang_SanPham" FromRole="SanPham" ToRole="ChiTietDonHang" />
+          <Property Name="urlhinharnh" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="sysdiagram">
           <Key>
@@ -474,6 +476,7 @@
           <EntitySetMapping Name="SanPhams">
             <EntityTypeMapping TypeName="ShoppingWebsiteModel.SanPham">
               <MappingFragment StoreEntitySet="SanPham">
+                <ScalarProperty Name="urlhinharnh" ColumnName="urlhinharnh" />
                 <ScalarProperty Name="sanphamID" ColumnName="sanphamID" />
                 <ScalarProperty Name="tensanpham" ColumnName="tensanpham" />
                 <ScalarProperty Name="giasanpham" ColumnName="giasanpham" />

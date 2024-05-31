@@ -25,6 +25,7 @@ namespace AdminDashboard_ShoppingWebsite.Models
         public string tensanpham { get; set; }
         public double giasanpham { get; set; }
         public int tonkho { get; set; }
+        public string urlhinharnh { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BinhLuan> BinhLuans { get; set; }

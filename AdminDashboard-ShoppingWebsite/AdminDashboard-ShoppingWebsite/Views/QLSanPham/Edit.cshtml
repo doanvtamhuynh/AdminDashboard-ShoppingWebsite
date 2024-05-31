@@ -1,0 +1,65 @@
+﻿@model AdminDashboard_ShoppingWebsite.Models.SanPham
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/_AdminLayout.cshtml";
+}
+
+<h2>Edit</h2>
+<form enctype="multipart/form-data">
+
+</form>
+@using (Html.BeginForm("Edit","QLSanPham",FormMethod.Post,new { @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>SanPham</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.sanphamID)
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Tên Sản Phẩm</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.tensanpham, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.tensanpham, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Giá Sản Phẩm</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.giasanpham, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.giasanpham, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Số Lượng</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.tonkho, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.tonkho, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Hình Ảnh</label>
+            <div class="col-md-10">
+                <img src="~/Content/img/@Model.urlhinharnh"
+                     style="width:50px; height:50px; border: 0.5px"/>
+                <input type="file" name="hinhanh"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

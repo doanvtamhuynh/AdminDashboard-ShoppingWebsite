@@ -2192,6 +2192,7 @@
     <Content Include="Content\fontawesome-free-6.5.1-web\svgs\solid\yen-sign.svg" />
     <Content Include="Content\fontawesome-free-6.5.1-web\svgs\solid\yin-yang.svg" />
     <Content Include="Content\fontawesome-free-6.5.1-web\svgs\solid\z.svg" />
+    <Content Include="Content\img\sanpham.jpg" />
     <Content Include="Content\Scripts\bootstrap.bundle.js" />
     <Content Include="Content\Scripts\bootstrap.bundle.min.js" />
     <Content Include="Content\Scripts\bootstrap.esm.js" />
@@ -2227,6 +2228,7 @@
     <Compile Include="App_Start\Logged.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\QLSanPhamController.cs" />
     <Compile Include="Controllers\QLTaiKhoanController.cs" />
     <Compile Include="Controllers\SecurityController.cs" />
     <Compile Include="Global.asax.cs">
@@ -2368,6 +2370,9 @@
     <Content Include="Views\Security\ForgotPassword.cshtml" />
     <Content Include="Views\QLTaiKhoan\Index.cshtml" />
     <Content Include="Views\QLTaiKhoan\Create.cshtml" />
+    <Content Include="Views\QLSanPham\Index.cshtml" />
+    <Content Include="Views\QLSanPham\Create.cshtml" />
+    <Content Include="Views\QLSanPham\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -18,7 +18,7 @@ namespace AdminDashboard_ShoppingWebsite.Models
         public int sanphamID { get; set; }
         public double giasanphamdathang { get; set; }
         public int donhangID { get; set; }
-        public Nullable<int> soluong { get; set; }
+        public int soluong { get; set; }
     
         public virtual DonHang DonHang { get; set; }
         public virtual SanPham SanPham { get; set; }
