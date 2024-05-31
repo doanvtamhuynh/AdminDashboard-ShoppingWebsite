@@ -1,8 +1,9 @@
 ﻿@model IEnumerable<AdminDashboard_ShoppingWebsite.Models.DonHang>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Quản lí đơn hàng";
     Layout = "~/Views/_AdminLayout.cshtml";
+    ViewBag.Active = 3;
     AdminDashboard_ShoppingWebsite.Models.ShoppingWebsiteEntities db = new AdminDashboard_ShoppingWebsite.Models.ShoppingWebsiteEntities();
 }
 

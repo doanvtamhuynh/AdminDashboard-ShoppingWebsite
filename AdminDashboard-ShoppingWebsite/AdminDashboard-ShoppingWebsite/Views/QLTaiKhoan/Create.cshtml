@@ -1,10 +1,11 @@
 ﻿@model AdminDashboard_ShoppingWebsite.Models.User
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Quản lí tài khoản";
     Layout = "~/Views/_AdminLayout.cshtml";
     AdminDashboard_ShoppingWebsite.Models.ShoppingWebsiteEntities db = new AdminDashboard_ShoppingWebsite.Models.ShoppingWebsiteEntities();
     var dsRole = db.Roles.ToList();
+    ViewBag.Active = 1;
 }
 
 <h2>Create</h2>

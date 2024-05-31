@@ -20,7 +20,7 @@ namespace AdminDashboard_ShoppingWebsite.App_Start
                 }
                 else
                 {
-                    filterContext.Result = new RedirectResult("/Security/Login");
+                    filterContext.Result = new RedirectResult("/Home/Index");
                 }
             }
             else

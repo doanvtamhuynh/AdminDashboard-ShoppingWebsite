@@ -2366,7 +2366,6 @@
     </Content>
     <None Include="packages.config" />
     <Content Include="Views\_AdminLayout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Security\Login.cshtml" />
     <Content Include="Views\Security\Register.cshtml" />
     <Content Include="Views\Security\ForgotPassword.cshtml" />
@@ -2380,6 +2379,7 @@
     <Content Include="Views\ThongKeDoanhThu\Index.cshtml" />
     <Content Include="Views\ThongKeDoanhThu\TimKiem.cshtml" />
     <Content Include="Views\ThongKeDoanhThu\TimKiemTheoThang.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

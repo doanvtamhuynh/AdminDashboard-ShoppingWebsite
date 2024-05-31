@@ -1,10 +1,11 @@
 ﻿@model IEnumerable<AdminDashboard_ShoppingWebsite.Models.DonHang>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Doanh thu";
     Layout = "~/Views/_AdminLayout.cshtml";
     AdminDashboard_ShoppingWebsite.Models.ShoppingWebsiteEntities db = new AdminDashboard_ShoppingWebsite.Models.ShoppingWebsiteEntities();
     double doanhThu = 0;
+    ViewBag.Active = 4;
 }
 
 <select style="margin-top:20px;margin-bottom:20px" id="mySelect">

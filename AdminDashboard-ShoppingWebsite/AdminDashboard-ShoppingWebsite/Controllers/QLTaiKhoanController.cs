@@ -7,6 +7,8 @@ using System.Web.Mvc;
 
 namespace AdminDashboard_ShoppingWebsite.Controllers
 {
+    [App_Start.Logged]
+    [App_Start.AdminAuthorize]
     public class QLTaiKhoanController : Controller
     {
         ShoppingWebsiteEntities db = new ShoppingWebsiteEntities();

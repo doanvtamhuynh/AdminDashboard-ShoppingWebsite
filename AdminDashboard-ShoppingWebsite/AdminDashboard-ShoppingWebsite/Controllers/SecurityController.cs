@@ -21,7 +21,7 @@ namespace AdminDashboard_ShoppingWebsite.Controllers
         public ActionResult Login(string username, string password)
         {
             var user = db.Users.FirstOrDefault(m => m.username == username && m.password == password);
-            if (user != null && user.roleID == 1)
+            if (user != null)
             {
                 Session["user"] = user;
                 return RedirectToAction("Index", "Home");

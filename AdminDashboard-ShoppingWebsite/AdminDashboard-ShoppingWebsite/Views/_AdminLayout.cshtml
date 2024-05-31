@@ -26,13 +26,13 @@
             <div class="sidebar">
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex align-items-center">
                     <div class="info d-flex">
-                        @*@if (Session["user"] != null)
+                        @if (Session["user"] != null)
                         {
                             <div class="d-block mr-2 text-white">
                                 @{
-                                    Barbershopmanagement.Models.USER user = (Barbershopmanagement.Models.USER)Session["user"];
+                                    AdminDashboard_ShoppingWebsite.Models.User user = (AdminDashboard_ShoppingWebsite.Models.User)Session["user"];
                                 }
-                                @user.HOTEN
+                                @user.hoten
                             </div>
                         }
                         else
@@ -40,8 +40,8 @@
                             <div class="d-block mr-2 text-white">
                                 admin
                             </div>
-                        }*@
-                        <a href="~/HomePage/" style="margin-left: 10px; border:none; outline:none; background: white;">
+                        }
+                        <a href="~/Security/Logout" style="margin-left: 10px; border:none; outline:none; background: white;">
                             <span class="fas fa-sign-out-alt" style="color:black"></span>
                         </a>
                     </div>
@@ -79,10 +79,10 @@
                         @if (ViewBag.Active == 1)
                         {
                             <li class="nav-item">
-                                <a href="~/Admin/QLDichVu/" class="nav-link active">
+                                <a href="~/QLTaiKhoan" class="nav-link active">
                                     <i class="fa-solid fa-circle nav-icon"></i>
                                     <p>
-                                        Quản lí dịch vụ
+                                        Quản lí tài khoản
                                     </p>
                                 </a>
                             </li>
@@ -90,10 +90,10 @@
                         else
                         {
                             <li class="nav-item">
-                                <a href="~/Admin/QLDichVu/" class="nav-link">
+                                <a href="~/QLTaiKhoan" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>
-                                        Quản lí dịch vụ
+                                        Quản lí tài khoản
                                     </p>
                                 </a>
                             </li>
@@ -101,10 +101,10 @@
                         @if (ViewBag.Active == 2)
                         {
                             <li class="nav-item">
-                                <a href="~/Admin/QLTaiKhoan/" class="nav-link active">
+                                <a href="~/QLSanPham" class="nav-link active">
                                     <i class="fa-solid fa-circle nav-icon"></i>
                                     <p>
-                                        Quản lí tài khoản
+                                        Quản lí sản phẩm
                                     </p>
                                 </a>
                             </li>
@@ -112,10 +112,10 @@
                         else
                         {
                             <li class="nav-item">
-                                <a href="~/Admin/QLTaiKhoan/" class="nav-link">
+                                <a href="~/QLSanPham" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>
-                                        Quản lí tài khoản
+                                        Quản lí sản phẩm
                                     </p>
                                 </a>
                             </li>
@@ -123,10 +123,10 @@
                         @if (ViewBag.Active == 3)
                         {
                             <li class="nav-item">
-                                <a href="~/Admin/QLLichHen" class="nav-link active">
+                                <a href="~/QLDonHang" class="nav-link active">
                                     <i class="fa-solid fa-circle nav-icon"></i>
                                     <p>
-                                        Quản lí lịch hẹn
+                                        Quản lí đơn hàng
                                     </p>
                                 </a>
                             </li>
@@ -134,17 +134,17 @@
                         else
                         {
                             <li class="nav-item">
-                                <a href="~/Admin/QLLichHen" class="nav-link">
+                                <a href="~/QLDonHang" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>
-                                        Quản lí lịch hẹn
+                                        Quản lí đơn hàng
                                     </p>
                                 </a>
                             </li>
                         }
 
 
-                        <li class="nav-item">
+                        @*<li class="nav-item">
                             <a href="#" class="nav-link" id="QLBinhLuan">
                                 <i class="fa-solid fa-list nav-icon"></i>
                                 <p>
@@ -193,13 +193,13 @@
                                     </li>
                                 }
                                 </ul>
-                            </li>
+                            </li>*@
 
                             <li class="nav-header">Thống kê</li>
                             @if (ViewBag.Active == 4)
                             {
                                 <li class="nav-item">
-                                    <a href="~/Admin/ThongKeDoanhThu" class="nav-link active">
+                                    <a href="~/ThongKeDoanhThu" class="nav-link active">
                                         <i class="nav-icon fas fa-file"></i>
                                         <p>Doanh thu</p>
                                     </a>
@@ -208,7 +208,7 @@
                             else
                             {
                                 <li class="nav-item">
-                                    <a href="~/Admin/ThongKeDoanhThu" class="nav-link">
+                                    <a href="~/ThongKeDoanhThu" class="nav-link">
                                         <i class="nav-icon fas fa-file"></i>
                                         <p>Doanh thu</p>
                                     </a>

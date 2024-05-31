@@ -7,6 +7,8 @@ using System.Web.Mvc;
 
 namespace AdminDashboard_ShoppingWebsite.Controllers
 {
+    [App_Start.Logged]
+    [App_Start.AdminAuthorize]
     public class QLDonHangController : Controller
     {
         ShoppingWebsiteEntities db = new ShoppingWebsiteEntities();

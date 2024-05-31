@@ -8,6 +8,7 @@ namespace AdminDashboard_ShoppingWebsite.Controllers
 {
     public class HomeController : Controller
     {
+        [App_Start.Logged]
         // GET: Home
         public ActionResult Index()
         {
