@@ -13,3 +13,8 @@ Dự án này là một ứng dụng web được thiết kế để hỗ trợ 
 - Giao Diện Người Dùng: HTML, CSS, JavaScript (ASP.NET Razor Pages)
 - Backend: ASP.NET MVC
 - Cơ Sở Dữ Liệu: Entity Framework (với SQL Server)
+
+## Hướng Dẫn Cài Đặt
+Clone repository về máy tính của bạn.
+   ```bash
+  https://github.com/doanvtamhuynh/AdminDashboard-ShoppingWebsite.git
